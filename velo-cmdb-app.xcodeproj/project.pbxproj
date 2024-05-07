@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01566D562BE96F3D00BBAA75 /* TwilioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01566D552BE96F3D00BBAA75 /* TwilioViewController.swift */; };
+		01566D592BE96F6400BBAA75 /* TwilioVoice in Frameworks */ = {isa = PBXBuildFile; productRef = 01566D582BE96F6400BBAA75 /* TwilioVoice */; };
+		018957B02BE9724900260831 /* TwilioRep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018957AF2BE9724900260831 /* TwilioRep.swift */; };
+		018957B42BE975DE00260831 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018957B32BE975DE00260831 /* AppDelegate.swift */; };
+		018957BB2BE97AC400260831 /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018957B52BE97AC400260831 /* CallManager.swift */; };
+		018957BC2BE97AC400260831 /* CXCallUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018957B62BE97AC400260831 /* CXCallUpdate.swift */; };
+		018957BD2BE97AC400260831 /* CXProvider+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018957B72BE97AC400260831 /* CXProvider+Sample.swift */; };
+		018957BE2BE97AC400260831 /* CXProviderConfiguration+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018957B82BE97AC400260831 /* CXProviderConfiguration+Sample.swift */; };
+		018957BF2BE97AC400260831 /* ProviderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018957B92BE97AC400260831 /* ProviderDelegate.swift */; };
+		018957C12BE97B2700260831 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018957C02BE97B2700260831 /* SceneDelegate.swift */; };
+		018957C82BE97B5100260831 /* CallInterfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018957C32BE97B5100260831 /* CallInterfaceView.swift */; };
+		018957C92BE97B5100260831 /* DialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018957C42BE97B5100260831 /* DialView.swift */; };
+		018957CA2BE97B5100260831 /* IncomingInterfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018957C52BE97B5100260831 /* IncomingInterfaceView.swift */; };
+		018957CB2BE97B5100260831 /* OutgoingInterfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018957C62BE97B5100260831 /* OutgoingInterfaceView.swift */; };
+		018957CD2BE97F1500260831 /* TwilioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018957CC2BE97F1500260831 /* TwilioManager.swift */; };
+		018AAA1E2BE41F6A00CA45B0 /* SupabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018AAA1D2BE41F6A00CA45B0 /* SupabaseManager.swift */; };
+		018AAA202BE4236100CA45B0 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018AAA1F2BE4236100CA45B0 /* Ticket.swift */; };
+		018AAA232BE4240000CA45B0 /* json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018AAA222BE4240000CA45B0 /* json.swift */; };
+		01A234962BE9607C00D247B3 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 01A234952BE9607C00D247B3 /* Supabase */; };
+		01C2080C2BE413D800B2EC4C /* velo_cmdb_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C2080B2BE413D800B2EC4C /* velo_cmdb_appApp.swift */; };
+		01C2080E2BE413D800B2EC4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C2080D2BE413D800B2EC4C /* ContentView.swift */; };
+		01C208122BE413DA00B2EC4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01C208112BE413DA00B2EC4C /* Assets.xcassets */; };
+		01C208152BE413DA00B2EC4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01C208142BE413DA00B2EC4C /* Preview Assets.xcassets */; };
+		01C208202BE413DA00B2EC4C /* velo_cmdb_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C2081F2BE413DA00B2EC4C /* velo_cmdb_appTests.swift */; };
+		01C2082A2BE413DA00B2EC4C /* velo_cmdb_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C208292BE413DA00B2EC4C /* velo_cmdb_appUITests.swift */; };
+		01C2082C2BE413DA00B2EC4C /* velo_cmdb_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C2082B2BE413DA00B2EC4C /* velo_cmdb_appUITestsLaunchTests.swift */; };
+		01C2083A2BE4151200B2EC4C /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C208392BE4151200B2EC4C /* Call.swift */; };
+		01C24C482BE93CAD005D32DF /* AgoraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C24C472BE93CAD005D32DF /* AgoraViewController.swift */; };
+		01C24C4A2BE93D62005D32DF /* AgoraRep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C24C492BE93D62005D32DF /* AgoraRep.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01C2081C2BE413DA00B2EC4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01C208002BE413D800B2EC4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01C208072BE413D800B2EC4C;
+			remoteInfo = "velo-cmdb-app";
+		};
+		01C208262BE413DA00B2EC4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01C208002BE413D800B2EC4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01C208072BE413D800B2EC4C;
+			remoteInfo = "velo-cmdb-app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01566D552BE96F3D00BBAA75 /* TwilioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioViewController.swift; sourceTree = "<group>"; };
+		018957AF2BE9724900260831 /* TwilioRep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioRep.swift; sourceTree = "<group>"; };
+		018957B32BE975DE00260831 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		018957B52BE97AC400260831 /* CallManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallManager.swift; sourceTree = "<group>"; };
+		018957B62BE97AC400260831 /* CXCallUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CXCallUpdate.swift; sourceTree = "<group>"; };
+		018957B72BE97AC400260831 /* CXProvider+Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CXProvider+Sample.swift"; sourceTree = "<group>"; };
+		018957B82BE97AC400260831 /* CXProviderConfiguration+Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CXProviderConfiguration+Sample.swift"; sourceTree = "<group>"; };
+		018957B92BE97AC400260831 /* ProviderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderDelegate.swift; sourceTree = "<group>"; };
+		018957C02BE97B2700260831 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		018957C32BE97B5100260831 /* CallInterfaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallInterfaceView.swift; sourceTree = "<group>"; };
+		018957C42BE97B5100260831 /* DialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialView.swift; sourceTree = "<group>"; };
+		018957C52BE97B5100260831 /* IncomingInterfaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomingInterfaceView.swift; sourceTree = "<group>"; };
+		018957C62BE97B5100260831 /* OutgoingInterfaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutgoingInterfaceView.swift; sourceTree = "<group>"; };
+		018957CC2BE97F1500260831 /* TwilioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwilioManager.swift; sourceTree = "<group>"; };
+		018AAA1D2BE41F6A00CA45B0 /* SupabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseManager.swift; sourceTree = "<group>"; };
+		018AAA1F2BE4236100CA45B0 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		018AAA222BE4240000CA45B0 /* json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = json.swift; sourceTree = "<group>"; };
+		01C208082BE413D800B2EC4C /* velo-cmdb-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "velo-cmdb-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01C2080B2BE413D800B2EC4C /* velo_cmdb_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = velo_cmdb_appApp.swift; sourceTree = "<group>"; };
+		01C2080D2BE413D800B2EC4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		01C208112BE413DA00B2EC4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01C208142BE413DA00B2EC4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		01C208162BE413DA00B2EC4C /* velo_cmdb_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = velo_cmdb_app.entitlements; sourceTree = "<group>"; };
+		01C2081B2BE413DA00B2EC4C /* velo-cmdb-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "velo-cmdb-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01C2081F2BE413DA00B2EC4C /* velo_cmdb_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = velo_cmdb_appTests.swift; sourceTree = "<group>"; };
+		01C208252BE413DA00B2EC4C /* velo-cmdb-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "velo-cmdb-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01C208292BE413DA00B2EC4C /* velo_cmdb_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = velo_cmdb_appUITests.swift; sourceTree = "<group>"; };
+		01C2082B2BE413DA00B2EC4C /* velo_cmdb_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = velo_cmdb_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		01C208392BE4151200B2EC4C /* Call.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Call.swift; sourceTree = "<group>"; };
+		01C24C402BE92F12005D32DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		01C24C472BE93CAD005D32DF /* AgoraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraViewController.swift; sourceTree = "<group>"; };
+		01C24C492BE93D62005D32DF /* AgoraRep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraRep.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01C208052BE413D800B2EC4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01A234962BE9607C00D247B3 /* Supabase in Frameworks */,
+				01566D592BE96F6400BBAA75 /* TwilioVoice in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01C208182BE413DA00B2EC4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01C208222BE413DA00B2EC4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		018957BA2BE97AC400260831 /* CallKit */ = {
+			isa = PBXGroup;
+			children = (
+				018957B62BE97AC400260831 /* CXCallUpdate.swift */,
+				018957B72BE97AC400260831 /* CXProvider+Sample.swift */,
+				018957B82BE97AC400260831 /* CXProviderConfiguration+Sample.swift */,
+				018957B92BE97AC400260831 /* ProviderDelegate.swift */,
+			);
+			path = CallKit;
+			sourceTree = "<group>";
+		};
+		018957C22BE97B4200260831 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				018957C72BE97B5100260831 /* CallViews */,
+				01C2080D2BE413D800B2EC4C /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		018957C72BE97B5100260831 /* CallViews */ = {
+			isa = PBXGroup;
+			children = (
+				018957C32BE97B5100260831 /* CallInterfaceView.swift */,
+				018957C42BE97B5100260831 /* DialView.swift */,
+				018957C52BE97B5100260831 /* IncomingInterfaceView.swift */,
+				018957C62BE97B5100260831 /* OutgoingInterfaceView.swift */,
+			);
+			path = CallViews;
+			sourceTree = "<group>";
+		};
+		018AAA212BE423F400CA45B0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				018957BA2BE97AC400260831 /* CallKit */,
+				018AAA222BE4240000CA45B0 /* json.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		01C207FF2BE413D800B2EC4C = {
+			isa = PBXGroup;
+			children = (
+				01C2080A2BE413D800B2EC4C /* velo-cmdb-app */,
+				01C2081E2BE413DA00B2EC4C /* velo-cmdb-appTests */,
+				01C208282BE413DA00B2EC4C /* velo-cmdb-appUITests */,
+				01C208092BE413D800B2EC4C /* Products */,
+				01C24BF62BE4277F005D32DF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		01C208092BE413D800B2EC4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01C208082BE413D800B2EC4C /* velo-cmdb-app.app */,
+				01C2081B2BE413DA00B2EC4C /* velo-cmdb-appTests.xctest */,
+				01C208252BE413DA00B2EC4C /* velo-cmdb-appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01C2080A2BE413D800B2EC4C /* velo-cmdb-app */ = {
+			isa = PBXGroup;
+			children = (
+				018957C22BE97B4200260831 /* Views */,
+				01C24C462BE93C9A005D32DF /* View Controllers */,
+				01C24C402BE92F12005D32DF /* Info.plist */,
+				018AAA212BE423F400CA45B0 /* Helpers */,
+				01C208492BE4170D00B2EC4C /* Managers */,
+				01C208382BE414FF00B2EC4C /* Models */,
+				01C2080B2BE413D800B2EC4C /* velo_cmdb_appApp.swift */,
+				01C208112BE413DA00B2EC4C /* Assets.xcassets */,
+				01C208162BE413DA00B2EC4C /* velo_cmdb_app.entitlements */,
+				01C208132BE413DA00B2EC4C /* Preview Content */,
+				018957B32BE975DE00260831 /* AppDelegate.swift */,
+				018957C02BE97B2700260831 /* SceneDelegate.swift */,
+			);
+			path = "velo-cmdb-app";
+			sourceTree = "<group>";
+		};
+		01C208132BE413DA00B2EC4C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				01C208142BE413DA00B2EC4C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		01C2081E2BE413DA00B2EC4C /* velo-cmdb-appTests */ = {
+			isa = PBXGroup;
+			children = (
+				01C2081F2BE413DA00B2EC4C /* velo_cmdb_appTests.swift */,
+			);
+			path = "velo-cmdb-appTests";
+			sourceTree = "<group>";
+		};
+		01C208282BE413DA00B2EC4C /* velo-cmdb-appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				01C208292BE413DA00B2EC4C /* velo_cmdb_appUITests.swift */,
+				01C2082B2BE413DA00B2EC4C /* velo_cmdb_appUITestsLaunchTests.swift */,
+			);
+			path = "velo-cmdb-appUITests";
+			sourceTree = "<group>";
+		};
+		01C208382BE414FF00B2EC4C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				01C208392BE4151200B2EC4C /* Call.swift */,
+				018AAA1F2BE4236100CA45B0 /* Ticket.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		01C208492BE4170D00B2EC4C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				018957B52BE97AC400260831 /* CallManager.swift */,
+				018957CC2BE97F1500260831 /* TwilioManager.swift */,
+				018AAA1D2BE41F6A00CA45B0 /* SupabaseManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		01C24BF62BE4277F005D32DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01C24C462BE93C9A005D32DF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				01C24C472BE93CAD005D32DF /* AgoraViewController.swift */,
+				01C24C492BE93D62005D32DF /* AgoraRep.swift */,
+				01566D552BE96F3D00BBAA75 /* TwilioViewController.swift */,
+				018957AF2BE9724900260831 /* TwilioRep.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01C208072BE413D800B2EC4C /* velo-cmdb-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01C2082F2BE413DA00B2EC4C /* Build configuration list for PBXNativeTarget "velo-cmdb-app" */;
+			buildPhases = (
+				01C208042BE413D800B2EC4C /* Sources */,
+				01C208052BE413D800B2EC4C /* Frameworks */,
+				01C208062BE413D800B2EC4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "velo-cmdb-app";
+			packageProductDependencies = (
+				01A234952BE9607C00D247B3 /* Supabase */,
+				01566D582BE96F6400BBAA75 /* TwilioVoice */,
+			);
+			productName = "velo-cmdb-app";
+			productReference = 01C208082BE413D800B2EC4C /* velo-cmdb-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01C2081A2BE413DA00B2EC4C /* velo-cmdb-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01C208322BE413DA00B2EC4C /* Build configuration list for PBXNativeTarget "velo-cmdb-appTests" */;
+			buildPhases = (
+				01C208172BE413DA00B2EC4C /* Sources */,
+				01C208182BE413DA00B2EC4C /* Frameworks */,
+				01C208192BE413DA00B2EC4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01C2081D2BE413DA00B2EC4C /* PBXTargetDependency */,
+			);
+			name = "velo-cmdb-appTests";
+			productName = "velo-cmdb-appTests";
+			productReference = 01C2081B2BE413DA00B2EC4C /* velo-cmdb-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		01C208242BE413DA00B2EC4C /* velo-cmdb-appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01C208352BE413DA00B2EC4C /* Build configuration list for PBXNativeTarget "velo-cmdb-appUITests" */;
+			buildPhases = (
+				01C208212BE413DA00B2EC4C /* Sources */,
+				01C208222BE413DA00B2EC4C /* Frameworks */,
+				01C208232BE413DA00B2EC4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01C208272BE413DA00B2EC4C /* PBXTargetDependency */,
+			);
+			name = "velo-cmdb-appUITests";
+			productName = "velo-cmdb-appUITests";
+			productReference = 01C208252BE413DA00B2EC4C /* velo-cmdb-appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01C208002BE413D800B2EC4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					01C208072BE413D800B2EC4C = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					01C2081A2BE413DA00B2EC4C = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 01C208072BE413D800B2EC4C;
+					};
+					01C208242BE413DA00B2EC4C = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 01C208072BE413D800B2EC4C;
+					};
+				};
+			};
+			buildConfigurationList = 01C208032BE413D800B2EC4C /* Build configuration list for PBXProject "velo-cmdb-app" */;
+			compatibilityVersion = "Xcode 15.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01C207FF2BE413D800B2EC4C;
+			packageReferences = (
+				01A345432BE4272100726FB4 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+				01566D572BE96F6400BBAA75 /* XCRemoteSwiftPackageReference "twilio-voice-ios" */,
+			);
+			productRefGroup = 01C208092BE413D800B2EC4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01C208072BE413D800B2EC4C /* velo-cmdb-app */,
+				01C2081A2BE413DA00B2EC4C /* velo-cmdb-appTests */,
+				01C208242BE413DA00B2EC4C /* velo-cmdb-appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01C208062BE413D800B2EC4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01C208152BE413DA00B2EC4C /* Preview Assets.xcassets in Resources */,
+				01C208122BE413DA00B2EC4C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01C208192BE413DA00B2EC4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01C208232BE413DA00B2EC4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01C208042BE413D800B2EC4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				018957B42BE975DE00260831 /* AppDelegate.swift in Sources */,
+				018AAA202BE4236100CA45B0 /* Ticket.swift in Sources */,
+				01C2080E2BE413D800B2EC4C /* ContentView.swift in Sources */,
+				018957B02BE9724900260831 /* TwilioRep.swift in Sources */,
+				01C24C4A2BE93D62005D32DF /* AgoraRep.swift in Sources */,
+				018957BC2BE97AC400260831 /* CXCallUpdate.swift in Sources */,
+				018957BB2BE97AC400260831 /* CallManager.swift in Sources */,
+				01C2083A2BE4151200B2EC4C /* Call.swift in Sources */,
+				01C24C482BE93CAD005D32DF /* AgoraViewController.swift in Sources */,
+				018957C92BE97B5100260831 /* DialView.swift in Sources */,
+				018957BE2BE97AC400260831 /* CXProviderConfiguration+Sample.swift in Sources */,
+				018957C82BE97B5100260831 /* CallInterfaceView.swift in Sources */,
+				018957C12BE97B2700260831 /* SceneDelegate.swift in Sources */,
+				018AAA232BE4240000CA45B0 /* json.swift in Sources */,
+				018957BD2BE97AC400260831 /* CXProvider+Sample.swift in Sources */,
+				018AAA1E2BE41F6A00CA45B0 /* SupabaseManager.swift in Sources */,
+				018957BF2BE97AC400260831 /* ProviderDelegate.swift in Sources */,
+				018957CD2BE97F1500260831 /* TwilioManager.swift in Sources */,
+				018957CB2BE97B5100260831 /* OutgoingInterfaceView.swift in Sources */,
+				01566D562BE96F3D00BBAA75 /* TwilioViewController.swift in Sources */,
+				018957CA2BE97B5100260831 /* IncomingInterfaceView.swift in Sources */,
+				01C2080C2BE413D800B2EC4C /* velo_cmdb_appApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01C208172BE413DA00B2EC4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01C208202BE413DA00B2EC4C /* velo_cmdb_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01C208212BE413DA00B2EC4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01C2082C2BE413DA00B2EC4C /* velo_cmdb_appUITestsLaunchTests.swift in Sources */,
+				01C2082A2BE413DA00B2EC4C /* velo_cmdb_appUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01C2081D2BE413DA00B2EC4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01C208072BE413D800B2EC4C /* velo-cmdb-app */;
+			targetProxy = 01C2081C2BE413DA00B2EC4C /* PBXContainerItemProxy */;
+		};
+		01C208272BE413DA00B2EC4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01C208072BE413D800B2EC4C /* velo-cmdb-app */;
+			targetProxy = 01C208262BE413DA00B2EC4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01C2082D2BE413DA00B2EC4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		01C2082E2BE413DA00B2EC4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		01C208302BE413DA00B2EC4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "velo-cmdb-app/velo_cmdb_app.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"velo-cmdb-app/Preview Content\"";
+				DEVELOPMENT_TEAM = PK8WVYF36Y;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "velo-cmdb-app/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Access the camera.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "The purpose for accessing the microphone, such as for a call or interactive live streaming.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thehourglassagency.velo-cmdb-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01C208312BE413DA00B2EC4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "velo-cmdb-app/velo_cmdb_app.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"velo-cmdb-app/Preview Content\"";
+				DEVELOPMENT_TEAM = PK8WVYF36Y;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "velo-cmdb-app/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Access the camera.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "The purpose for accessing the microphone, such as for a call or interactive live streaming.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thehourglassagency.velo-cmdb-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		01C208332BE413DA00B2EC4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PK8WVYF36Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thehourglassagency.velo-cmdb-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/velo-cmdb-app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/velo-cmdb-app";
+			};
+			name = Debug;
+		};
+		01C208342BE413DA00B2EC4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PK8WVYF36Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thehourglassagency.velo-cmdb-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/velo-cmdb-app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/velo-cmdb-app";
+			};
+			name = Release;
+		};
+		01C208362BE413DA00B2EC4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PK8WVYF36Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thehourglassagency.velo-cmdb-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "velo-cmdb-app";
+			};
+			name = Debug;
+		};
+		01C208372BE413DA00B2EC4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PK8WVYF36Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thehourglassagency.velo-cmdb-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "velo-cmdb-app";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01C208032BE413D800B2EC4C /* Build configuration list for PBXProject "velo-cmdb-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01C2082D2BE413DA00B2EC4C /* Debug */,
+				01C2082E2BE413DA00B2EC4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01C2082F2BE413DA00B2EC4C /* Build configuration list for PBXNativeTarget "velo-cmdb-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01C208302BE413DA00B2EC4C /* Debug */,
+				01C208312BE413DA00B2EC4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01C208322BE413DA00B2EC4C /* Build configuration list for PBXNativeTarget "velo-cmdb-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01C208332BE413DA00B2EC4C /* Debug */,
+				01C208342BE413DA00B2EC4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01C208352BE413DA00B2EC4C /* Build configuration list for PBXNativeTarget "velo-cmdb-appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01C208362BE413DA00B2EC4C /* Debug */,
+				01C208372BE413DA00B2EC4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		01566D572BE96F6400BBAA75 /* XCRemoteSwiftPackageReference "twilio-voice-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twilio/twilio-voice-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.10.4;
+			};
+		};
+		01A345432BE4272100726FB4 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		01566D582BE96F6400BBAA75 /* TwilioVoice */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01566D572BE96F6400BBAA75 /* XCRemoteSwiftPackageReference "twilio-voice-ios" */;
+			productName = TwilioVoice;
+		};
+		01A234952BE9607C00D247B3 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01A345432BE4272100726FB4 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 01C208002BE413D800B2EC4C /* Project object */;
+}
